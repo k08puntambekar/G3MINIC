@@ -4,31 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
     tools:context=".Registration">
+
+    <com.scwang.wave.MultiWaveHeader
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/wave_header"/>
+
+    <com.scwang.wave.MultiWaveHeader
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/wave_footer"
+        android:scaleY="-1"
+        android:layout_alignParentBottom="true"/>
 
     <TextView
         android:id="@+id/registerTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="31dp"
-        android:text="Register Here"
-        android:textColor="@color/black"
-        android:textSize="36sp" />
-
-    <ImageView
-        android:id="@+id/registerLogo"
-        android:layout_width="113dp"
-        android:layout_height="120dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="266dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="190dp"
+        android:text="Here's your first step with us!"
+        android:textColor="@color/black"
+        android:textSize="33sp" />
+
+    <ImageView
+        android:id="@+id/registerLogo"
+        android:layout_width="75dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
         app:srcCompat="@drawable/register_person" />
 
     <EditText
@@ -138,7 +151,21 @@
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="70dp"
         android:background="@drawable/button_bg"
+        app:backgroundTint="@null"
         android:text="REGISTER"
+        android:textColor="@color/black"
         android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="350dp"
+        app:srcCompat="@drawable/back_arrow" />
 
 </RelativeLayout>

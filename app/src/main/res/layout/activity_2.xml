@@ -10,7 +10,11 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="138dp"
         android:text="Your Assessment List"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="340dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

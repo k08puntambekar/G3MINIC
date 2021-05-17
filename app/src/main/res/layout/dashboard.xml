@@ -44,7 +44,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/baloo"
-            android:text="Java"
+            android:text="Get Started!"
             android:textSize="30sp"
             app:layout_constraintEnd_toStartOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="parent"
@@ -90,6 +90,7 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:padding="10dp"
+                android:background="@drawable/card_view"
                 app:cardElevation="5dp">
 
                 <RelativeLayout
@@ -105,7 +106,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="0dp"
                         android:fontFamily="@font/baloo"
-                        android:text="Course 1"
+                        android:text="Java"
                         android:textSize="24sp" />
 
                     <ImageView
@@ -138,8 +139,8 @@
                         android:layout_below="@id/imageView3"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="0dp"
-                        android:fontFamily="@font/aclonica"
-                        android:text="Course 2"
+                        android:fontFamily="@font/baloo"
+                        android:text="Python"
                         android:textSize="24sp" />
 
                     <ImageView
@@ -185,7 +186,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="0dp"
                         android:fontFamily="@font/baloo"
-                        android:text="Course 3"
+                        android:text="CPP"
                         android:textSize="24sp" />
 
                     <ImageView
@@ -194,7 +195,7 @@
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="4dp"
-                        app:srcCompat="@drawable/mindset" />
+                        app:srcCompat="@drawable/cpp" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -218,8 +219,8 @@
                         android:layout_below="@id/imageView5"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="0dp"
-                        android:fontFamily="@font/aclonica"
-                        android:text="Course 4"
+                        android:fontFamily="@font/baloo"
+                        android:text="Data Structures"
                         android:textSize="24sp" />
 
                     <ImageView
@@ -228,7 +229,7 @@
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="4dp"
-                        app:srcCompat="@drawable/icons8_command_line_64" />
+                        app:srcCompat="@drawable/mindset" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -264,7 +265,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="4dp"
                         android:fontFamily="@font/baloo"
-                        android:text="Course 5"
+                        android:text="C#"
                         android:textSize="24sp" />
 
                     <ImageView
@@ -273,7 +274,7 @@
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="4dp"
-                        app:srcCompat="@drawable/icons8_calendar_64" />
+                        app:srcCompat="@drawable/c_sharp" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -297,8 +298,8 @@
                         android:layout_below="@id/imageView7"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="4dp"
-                        android:fontFamily="@font/aclonica"
-                        android:text="Course 6"
+                        android:fontFamily="@font/baloo"
+                        android:text="HTML"
                         android:textSize="24sp" />
 
                     <ImageView
@@ -307,7 +308,7 @@
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="4dp"
-                        app:srcCompat="@drawable/icons8_command_line_64" />
+                        app:srcCompat="@drawable/html" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>

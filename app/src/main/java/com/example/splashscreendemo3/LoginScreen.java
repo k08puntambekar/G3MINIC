@@ -3,6 +3,7 @@ package com.example.splashscreendemo3;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.scwang.wave.MultiWaveHeader;
+
 public class LoginScreen extends AppCompatActivity {
 
     //Variables
@@ -20,6 +23,7 @@ public class LoginScreen extends AppCompatActivity {
     ImageView websiteLogo, facebookLogo, instagramLogo;
     TextView newUserText;
     Button loginButton;
+    MultiWaveHeader waveHeader, waveFooter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +40,30 @@ public class LoginScreen extends AppCompatActivity {
         instagramLogo = findViewById(R.id.instagramLogo);
         newUserText = findViewById(R.id.newUserText);
         loginButton = findViewById(R.id.loginButton);
+        waveHeader = findViewById(R.id.wave_header);
+        waveFooter = findViewById(R.id.wave_footer);
         //Set animation
         loginLogo.setAnimation(top_animation);
+
+        //Setting wave animation
+        waveHeader = findViewById(R.id.wave_header);
+        waveFooter = findViewById(R.id.wave_footer);
+
+        waveHeader.setVelocity(1);
+        waveHeader.setProgress(1);
+        waveHeader.isRunning();
+        waveHeader.setGradientAngle(45);
+        waveHeader.setWaveHeight(40);
+        waveHeader.setStartColor(Color.RED);
+        waveHeader.setCloseColor(Color.CYAN);
+
+        waveFooter.setVelocity(1);
+        waveFooter.setProgress(1);
+        waveFooter.isRunning();
+        waveFooter.setGradientAngle(45);
+        waveFooter.setWaveHeight(40);
+        waveFooter.setStartColor(Color.MAGENTA);
+        waveFooter.setCloseColor(Color.YELLOW);
 
         //Set onClickListener on Logo ImageViews
         websiteLogo.setOnClickListener(new View.OnClickListener() {

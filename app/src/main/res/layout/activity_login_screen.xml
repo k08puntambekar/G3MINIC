@@ -4,8 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
     tools:context=".LoginScreen">
+
+    <com.scwang.wave.MultiWaveHeader
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/wave_header"/>
+
+    <com.scwang.wave.MultiWaveHeader
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/wave_footer"
+        android:scaleY="-1"
+        android:layout_alignParentBottom="true"/>
 
     <ImageView
         android:id="@+id/loginLogo"
@@ -16,15 +27,15 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="133dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="131dp"
-        android:layout_marginBottom="539dp"
+        android:layout_marginBottom="520dp"
         app:srcCompat="@drawable/codinglogo" />
 
     <EditText
         android:id="@+id/usernameText"
         android:layout_width="278dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
@@ -32,7 +43,8 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="426dp"
         android:drawableStart="@drawable/roll_no"
-        android:drawablePadding="5dp"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Roll no"
         android:inputType="number"
@@ -42,7 +54,7 @@
     <EditText
         android:id="@+id/passwordText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
@@ -51,6 +63,7 @@
         android:layout_marginBottom="341dp"
         android:drawableStart="@drawable/password"
         android:drawablePadding="5dp"
+        android:paddingLeft="10dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
@@ -68,7 +81,9 @@
         android:layout_marginEnd="61dp"
         android:layout_marginBottom="227dp"
         android:background="@drawable/button_bg"
+        app:backgroundTint="@null"
         android:text="LOGIN"
+        android:textColor="@color/black"
         android:textSize="22sp" />
 
     <TextView
